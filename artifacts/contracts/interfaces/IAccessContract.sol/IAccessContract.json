@@ -1,0 +1,63 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IAccessContract",
+  "sourceName": "contracts/interfaces/IAccessContract.sol",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "removedContractAddress",
+          "type": "address"
+        }
+      ],
+      "name": "AvailableContractAddressRemoved",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "newContractAddress",
+          "type": "address"
+        }
+      ],
+      "name": "NewAvailableContractAddressAdded",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newContractAddress",
+          "type": "address"
+        }
+      ],
+      "name": "addNewAvailableContractAddress",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "removeContractAddress",
+          "type": "address"
+        }
+      ],
+      "name": "removeAvailableContractAddress",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

@@ -1,0 +1,207 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IRNFTDollarDeposit",
+  "sourceName": "contracts/interfaces/IRNFTDollarDeposit.sol",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "stablecoinAddress",
+          "type": "address"
+        }
+      ],
+      "name": "NewStablecoinAddressAdded",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "oldREthAddress",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "newREthAddress",
+          "type": "address"
+        }
+      ],
+      "name": "REthAddressChanged",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "oldRocketPoolDepositAddress",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "newRocketPoolDepositAddress",
+          "type": "address"
+        }
+      ],
+      "name": "RocketPoolDepositAddressChanged",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "stablecoinAddress",
+          "type": "address"
+        }
+      ],
+      "name": "StablecoinAddressRemoved",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "sender",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "amountOut",
+          "type": "uint256"
+        }
+      ],
+      "name": "StakedWEthAndReceivedRNFDollar",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "oldWEthAddress",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "newWEthAddress",
+          "type": "address"
+        }
+      ],
+      "name": "WEthAddressChanged",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "stablecoinAddress",
+          "type": "address"
+        }
+      ],
+      "name": "addNewStablecoinAddress",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenIn",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amountIn",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "decimalsOfInput",
+          "type": "uint256"
+        }
+      ],
+      "name": "depositRPAndMintRNFTD",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "amountOut",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "stablecoinAddress",
+          "type": "address"
+        }
+      ],
+      "name": "removeStablecoinAddress",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newREthAddress",
+          "type": "address"
+        }
+      ],
+      "name": "setNewREthAddress",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newRocketPoolDepositAddress",
+          "type": "address"
+        }
+      ],
+      "name": "setNewRocketPoolDepositAddress",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newWEthAddress",
+          "type": "address"
+        }
+      ],
+      "name": "setNewWEthAddress",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
