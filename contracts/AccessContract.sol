@@ -9,7 +9,6 @@ error AccessContract_ZeroAddress();
 error AccessContract_NotHaveAccess(address sender);
 error AccessContract_AlreadyAvailableContractAdded(address availableContract);
 
-/// @author Georgi Karagyozov
 /// @notice Access Contract contract through which it provides access to certain functions.
 contract AccessContract is Ownable2Step, IAccessContract {
   mapping(address => bool) public availableContracts;
