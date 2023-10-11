@@ -16,7 +16,7 @@ error RNFTDollarDeposit_NotAdminRole();
 error RNFTDollarDeposit_AlreadyStablecoinAdded(address stablecoin);
 error RNFTDollarDeposit_NotAvailableStablecoin(address stablecoin);
 
-/// @author Georgi Karagyozov
+
 contract RNFTDollarDeposit is AccessControl, IRNFTDollarDeposit {
   address public wEth;
   address public rEth;
