@@ -5,7 +5,7 @@ import {IRNFTDollar} from "./interfaces/IRNFTDollar.sol";
 import {AccessContract} from "./AccessContract.sol";
 import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
 
-/// @author Georgi Karagyozov
+
 /// @notice Stablecoin rNFTD contract, which rNFTD tokens are minted at 1 to 1 ratio when someone deposits the same value in the form of stablecoin like (USDC, DAI, USDT etc.)
 contract RNFTDollar is IRNFTDollar, ERC20Burnable, AccessContract {
   constructor() ERC20("rNFT Dollar", "rNFTD") {}
